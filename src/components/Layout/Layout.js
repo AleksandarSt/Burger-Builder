@@ -1,15 +1,16 @@
 import React from 'react';
 
-import Wraper from '../../hoc/Wraper'
-import classes from './Layout.css'
+import Wraper from '../../hoc/Wraper';
+import classes from './Layout.css';
+import Toolbar from '../Navigation/Toolbar/Toolbar';
 
 const layout = (props) => (
     <Wraper>
-        <div>Toolbar, SideDrawer, Backdrops
+        <Toolbar/>
         <main className={classes.Content}>
                 {props.children}
             </main>
-        </div>
+        
     </Wraper>
 );
 
