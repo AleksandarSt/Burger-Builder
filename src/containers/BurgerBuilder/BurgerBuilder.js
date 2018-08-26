@@ -37,7 +37,7 @@ class BurgerBuilder extends Component {
     }
 
     purchaseContinueHandler = () => {
-        //alert('Bam!');
+       /*  //alert('Bam!');
         this.setState({
             loading: true
         })
@@ -70,7 +70,9 @@ class BurgerBuilder extends Component {
                     loading: false,
                     purchasing: false
                 });
-            });
+            }); */
+
+            this.props.history.push('/checkout')
     }
 
     purchaseCancelHandler = () => {
