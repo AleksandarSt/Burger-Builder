@@ -20,7 +20,7 @@ export const purchaseBurgerStart = () => {
     return {
         type: actionsTypes.PURCHASE_BURGER_START
     }
-}
+};
 
 export const purchaseBurger = (orderData) => {
     return dispatch => {
@@ -35,4 +35,10 @@ export const purchaseBurger = (orderData) => {
                 dispatch(purchaseBurgerFail(error));
             });
     }
-}
+};
+
+export const purchaseInit = () => {
+    return {
+        type: actionsTypes.PURCHASE_INIT
+    };
+};
