@@ -5,10 +5,7 @@ import classes from './Order.css'
 const order = (props) => {
     const ingredients = [];
 
-    console.log(props)
-
     for (let ingredientName in props.ingredients) {
-        console.log(props.ingredients[ingredientName])
 
         ingredients.push({
             name: ingredientName,

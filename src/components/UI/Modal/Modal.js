@@ -11,10 +11,6 @@ class Modal extends Component {
             || prevProps.children !== this.props.children;
     }
 
-    componentWillUpdate() {
-        console.log('Modal will update!')
-    }
-
     render() {
         return (
             <Wraper>
